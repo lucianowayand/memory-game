@@ -1,0 +1,80 @@
+.container {
+  padding: 2.5em;
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Press Start 2P", sans-serif; /* Retro font */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* White text */
+  background: linear-gradient(90deg, #4a4e69, #22223b); /* Cosmic gradient */
+  border: 2px solid #9a8c98; /* Metallic border */
+  border-radius: 10px; /* Smooth edges */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    /* Outer glow */ 0 6px 12px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+h2 {
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 1em;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 2px solid #9a8c98; /* Metallic border */
+  box-sizing: border-box;
+  font-family: "Press Start 2P", sans-serif; /* Retro font */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* White text */
+  background: linear-gradient(90deg, #4a4e69, #22223b); /* Cosmic gradient */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    /* Outer glow */ 0 6px 12px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+}
+
+.message {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+}
+
+.registerButton {
+  height: 70px;
+  width: 100%;
+  margin: 15px;
+  font-family: "Press Start 2P", sans-serif; /* Retro font */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* White text */
+  background: linear-gradient(90deg, #4a4e69, #22223b); /* Cosmic gradient */
+  border: 2px solid #9a8c98; /* Metallic border */
+  border-radius: 10px; /* Smooth edges */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    /* Outer glow */ 0 6px 12px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+}
+
+.registerButton:hover {
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    /* Brighter glow */ 0 8px 16px rgba(0, 0, 0, 0.6); /* Deeper shadow */
+}
+
+.registerButton:active {
+  transform: scale(0.95); /* Slightly shrink the button */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
+    /* Dimmer glow */ 0 4px 8px rgba(0, 0, 0, 0.4); /* Softer shadow */
+  background: linear-gradient(90deg, #3a3e59, #1a1b2b); /* Darker gradient */
+}

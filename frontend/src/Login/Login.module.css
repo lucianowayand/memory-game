@@ -1,0 +1,120 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 1em;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 2px solid #9a8c98; /* Metallic border */
+  box-sizing: border-box;
+  font-family: "Press Start 2P", sans-serif; /* Retro font */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* White text */
+  background: linear-gradient(90deg, #4a4e69, #22223b); /* Cosmic gradient */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    /* Outer glow */ 0 6px 12px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Subtle white for placeholder text */
+  font-family: "Press Start 2P", sans-serif; /* Match input font */
+}
+
+.button {
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.registerButton {
+  background-color: #6c757d;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+
+.loginFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height */
+}
+
+.loginContainer {
+  padding: 2.5em;
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Press Start 2P", sans-serif; /* Retro font */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* White text */
+  background: linear-gradient(90deg, #4a4e69, #22223b); /* Cosmic gradient */
+  border: 2px solid #9a8c98; /* Metallic border */
+  border-radius: 10px; /* Smooth edges */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    /* Outer glow */ 0 6px 12px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+@media screen and (max-width: 768px) {
+  .loginContainer {
+    width: 60vw;
+  }
+}
+
+.loginTitle {
+  font-family: "Orbitron", sans-serif; /* Futuristic font for space theme */
+  font-size: 50px; /* Large size */
+  color: #ffcc00; /* Yellow, matching stars */
+  text-shadow: 0 0 10px #ffcc00, /* Outer glow */ 0 0 20px #ffaa00,
+    /* Brighter inner glow */ 0 0 30px rgba(255, 255, 255, 0.6); /* Subtle white glow */
+  margin-top: 70px;
+  z-index: 10;
+  user-select: none;
+  animation: pulseTitle 3s infinite; /* Add glowing pulse animation */
+}
+
+.loginButton {
+  height: 70px;
+  margin: 15px;
+  font-family: "Press Start 2P", sans-serif; /* Retro font */
+  font-size: 16px; /* Font size */
+  color: #ffffff; /* White text */
+  background: linear-gradient(90deg, #4a4e69, #22223b); /* Cosmic gradient */
+  border: 2px solid #9a8c98; /* Metallic border */
+  border-radius: 10px; /* Smooth edges */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3),
+    /* Outer glow */ 0 6px 12px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s, background 0.3s;
+}
+
+.loginButton:hover {
+  transform: scale(1.05); /* Slightly enlarge the button */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+    /* Brighter glow */ 0 8px 16px rgba(0, 0, 0, 0.6); /* Deeper shadow */
+}
+
+.loginButton:active {
+  transform: scale(0.95); /* Slightly shrink the button */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
+    /* Dimmer glow */ 0 4px 8px rgba(0, 0, 0, 0.4); /* Softer shadow */
+  background: linear-gradient(90deg, #3a3e59, #1a1b2b); /* Darker gradient */
+}
